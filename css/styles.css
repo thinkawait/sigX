@@ -905,7 +905,7 @@ a:hover {
 
 .footer h6 {
 	margin-bottom: 0.625rem;
-	color: #ffffff;
+	color: #6d717a;
 	opacity: 0.9;
 }
 
@@ -913,10 +913,10 @@ a:hover {
 .footer a,
 .footer ul {
 	opacity: 0.9;
-	color: #ffffff;
+	color: #6d717a;
 }
 .footer span{
-	color: #ffffff;
+	color: #6d717a;
 }
 
 .footer .li-space-lg li {
