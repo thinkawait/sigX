@@ -848,10 +848,7 @@ a:hover {
 
 .form-1 li{
 	text-align: left;
-}
-
-.form-1 .text-container h5 {
-	text-align: right;
+	list-style-type: none;
 }
 
 .form-1 .text-container h2 {
