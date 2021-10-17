@@ -16,7 +16,7 @@
     <link href="css/fontawesome-all.min.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
-	
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
 	<!-- Favicon  -->
     <link rel="icon" href="images/logo.png">
 </head>
@@ -26,7 +26,7 @@
         <div class="container">
 
             <!-- Image Logo -->
-            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo-w.bmp" alt="alternative"></a> 
+            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo-b.bmp" alt="alternative"></a> 
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
             <!-- <a class="navbar-brand logo-text" href="index.html">Yavin</a> -->
@@ -56,9 +56,19 @@
     <!-- end of navigation -->
     <!-- Header -->
     <header id="header" class="header">
-        <div class="image d-flex justify-content-center align-items-center">
-            <img class="" src="images/index.png" alt="alternative">
-        </div> <!-- end of container -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image:url('images/carousel1.jpg')"></div>
+                <div class="swiper-slide" style="background-image:url('images/carousel2.jpg')"></div>
+                <div class="swiper-slide" style="background-image:url('images/carousel3.jpg')"></div>
+                <div class="swiper-slide" style="background-image:url('images/carousel4.jpg')"></div>
+                <div class="swiper-slide" style="background-image:url('images/carousel5.jpg')"></div>
+            </div>
+        </div>
+        <!-- <div class=""> -->
+             
+            <!-- <img class="" src="" alt="alternative">
+        </div> end of container -->
     </header> <!-- end of header -->
     <!-- end of header -->
     <div class="footer">
@@ -94,5 +104,19 @@
     <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
     <script src="js/purecounter.min.js"></script> <!-- Purecounter counter for statistics numbers -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <!-- backstretch jquery-->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script type="text/javascript">
+        var mySwiper = new Swiper ('.swiper-container', {
+            direction: "horizontal", // 方向
+  		    loop: true,  // 循環
+            autoplay: {
+                delay: 3000,
+                stopOnLastSlide: false,
+                disableOnInteraction: true,
+            },
+            
+        });
+    </script>
 </body>
 </html>
