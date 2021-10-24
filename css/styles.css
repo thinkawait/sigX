@@ -434,7 +434,7 @@ a:hover {
 .header {
 	position: relative;
 	overflow: hidden;
-	padding-top: 6rem;
+	padding-top: 4rem;
 	background-color: #000000;
 	text-align: center;
 	flex-grow: 1;
@@ -465,7 +465,7 @@ a:hover {
 	margin-left: 0.25rem;
 }
 
-.swiper-container {
+.swiper-container,.container {
   height: 100%;
 }
 
@@ -494,7 +494,23 @@ a:hover {
 	max-width: 1200px;
 	width: 100%;
 }
-
+.header .swiper-wrapper .swiper-slide1 {
+	background-size:contain;
+	background-image: url('/images/carousel1-M.jpg'); 
+ }
+.header .swiper-wrapper .swiper-slide2 {
+	background-image: url('/images/carousel2.jpg');
+}
+.header .swiper-wrapper .swiper-slide3 {
+	background-image: url('/images/carousel3-M.jpg');
+}
+.header .swiper-wrapper .swiper-slide4 {
+	background-image: url('/images/carousel4-M.jpg');
+}
+.header .swiper-wrapper .swiper-slide5 {
+	background-image: url('/images/carousel5.jpg');
+}
+/* end of header */
 
 
 /**********************/
@@ -906,7 +922,7 @@ a:hover {
 /*     Footer     */
 /******************/
 .footer {
-	padding-top: 1.5rem;
+	padding-top: 1rem;
 }
 
 .footer a {
@@ -914,11 +930,11 @@ a:hover {
 }
 
 .footer .footer-col {
-	margin-bottom: 1rem;
+	/* margin-bottom: 1rem; */
 }
 
 .footer .footer-col.second {
-	margin-top: 1rem;
+	/* margin-top: 1rem; */
 }
 
 .footer h6 {
@@ -1059,13 +1075,39 @@ a:hover {
 
 /*************************/
 /*     Media Queries     */
-/*************************/	
+/*************************/
+@media (min-width: 576px){
+	/* Header */
+	.header {
+		min-height: 400px;
+	}
+	.header .swiper-container{
+		max-width: 540px;
+	}
+	.header .swiper-wrapper .swiper-slide1 {
+		background-size: cover;
+		background-image: url('/images/carousel1.jpg');
+	}
+	.header .swiper-wrapper .swiper-slide2 {
+		background-image: url('/images/carousel2.jpg');
+	}
+	.header .swiper-wrapper .swiper-slide3 {
+		background-image: url('/images/carousel3.jpg');
+	}
+	.header .swiper-wrapper .swiper-slide4 {
+		background-image: url('/images/carousel4.jpg');
+	}
+	.header .swiper-wrapper .swiper-slide5 {
+		background-image: url('/images/carousel5.jpg');
+	}
+}	
 /* Min-width 768px */
 @media (min-width: 768px) {
 
 	/* Header */
 	.header {
 		padding-top: 6rem;
+		min-height: 400px;
 	}
 
 	.header .decoration-star {
@@ -1078,6 +1120,27 @@ a:hover {
 		top: 140px;
 		right: -200px;
 		width: 400px;
+	}
+
+	.header .swiper-container{
+		max-width: 720px;
+		
+	}
+	.header .swiper-wrapper .swiper-slide1 {
+		background-size: cover;
+		background-image: url('/images/carousel1.jpg');
+	}
+	.header .swiper-wrapper .swiper-slide2 {
+		background-image: url('/images/carousel2.jpg');
+	}
+	.header .swiper-wrapper .swiper-slide3 {
+		background-image: url('/images/carousel3.jpg');
+	}
+	.header .swiper-wrapper .swiper-slide4 {
+		background-image: url('/images/carousel4.jpg');
+	}
+	.header .swiper-wrapper .swiper-slide5 {
+		background-image: url('/images/carousel5.jpg');
 	}
 	/* end of header */
 
@@ -1141,7 +1204,7 @@ a:hover {
 
 	/* Navigation */
 	.navbar {
-		padding-top: 1.75rem;
+		padding-top: 1rem;
 		font-size: 1rem;
 		line-height: 1.5rem;
 		background-color:#000000;
@@ -1207,6 +1270,7 @@ a:hover {
 
 	/* Header */
 	.header {
+		padding-top: 4rem;
 		text-align: left;
 	}
 
@@ -1227,6 +1291,15 @@ a:hover {
 	.header .btn-solid-lg {
 		margin-right: 0.5rem;
 	}
+
+	.header .swiper-container{
+		/* margin: 0rem 1rem; */
+	}
+	.header .swiper-container{
+		max-width: 960px;
+		
+	}
+	
 	/* end of header */
 
 
@@ -1338,8 +1411,11 @@ a:hover {
 	/* end of about */
 
 	/* Footer */
+	.footer{
+		padding-top: 1rem;
+	}
 	.footer .footer-col {
-		margin-bottom: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	.footer .footer-col.first {
@@ -1392,10 +1468,6 @@ a:hover {
 	
 
 	/* Header */
-	.header {
-		padding-top: 6rem;
-	}
-
 	.header .text-container {
 		margin-top: 6.5rem;
 	}
@@ -1419,6 +1491,10 @@ a:hover {
 
 	.header .image-container {
 		text-align: right;
+	}
+	.header .swiper-container{
+		max-width: 1140px;
+		
 	}
 	/* end of header */
 
@@ -1566,12 +1642,11 @@ a:hover {
 	/* Footer */
 	.footer .footer-col.first {
 		width: 352px;
-		margin-right: 6rem;
 	}
 	
-	.footer .footer-col.second {
+	/* .footer .footer-col.second {
 		margin-right: 6.5rem;
-	}
+	} */
 	
 	.footer .footer-col.third {
 		text-align: right;
@@ -1616,3 +1691,4 @@ a:hover {
 	
 }
 /* end of min-width 1400px */
+	
